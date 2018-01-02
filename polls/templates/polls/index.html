@@ -2,14 +2,6 @@
 <h1>Lastest Quesion List</h1>
 <ul>
     {% for question in latest_question_list %}
-    <!--<li>
-        <a href="/polls/{{question.id}}/">{{ question.question_text }}</a>
-    </li>
-    # url 'detail'  evaluate to /polls/ using urls.py the route name is detail for an entry there
-    -->
-    <!--<li>
-        <a href="{% url 'detail' question.id %}">{{ question.question_text }}</a>
-    </li>-->
     <!-- app name is set to polls in  urls.py-->
     <li>
             <a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a>
