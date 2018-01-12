@@ -20,6 +20,7 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('polls/', include('polls.urls')),
+    path('catalog/',include('catalog.urls')),
 ]
 
 #admin.site.site_header = 'My project'
