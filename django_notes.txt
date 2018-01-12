@@ -1,0 +1,93 @@
+Create Project
+	django-admin startproject myproject
+
+Create Application
+	python3 manage.py startapp myapp
+Launch Project:
+	python3 manage.py runserver
+
+Initiate Database
+	 python3 manage.py migrate
+
+Create Super user of admin interface
+	python3 manage.py createsuperuser
+
+------------------git repo name is typescript------------
+echo "# typescript" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/gitsangramdesai/typescript.git
+git push -u origin master
+
+-------------------Launch Chromium from terminal-------------
+/usr/bin/chromium-browser
+
+-----------------Push to Existing Git Repo-----------
+git add .
+git commit -m "my msg"
+git push -u origin master
+---------------------------------
+
+Create Virtual Environment 
+	virtualenv pyvirtenv-demo -p /usr/bin/python3
+	
+	pip install django
+
+Django Version Check:on python shell 
+	import django
+	django.VERSION
+
+Create Migration file for polls app
+	python3 manage.py makemigrations polls
+
+To see Migration Generated as SQL for polls App inside migration file "0001_initial.py"
+	python3 manage.py sqlmigrate polls 0001		
+
+Run Migration Generated for Polls app:
+	python3 manage.py migrate polls
+
+Python App Shell
+	python3 manage.py shell
+
+
+from polls.models import Question, Choice
+
+-----------------------------------Query Set-------------------------	
+q = Question.objects.get(pk=1)
+q.was_published_recently()
+q.choice_set.all()
+
+q.choice_set.create(choice_text="Not much",votes=0)
+q.choice_set.create(choice_text="The sky",votes=0)
+c= q.choice_set.create(choice_text="just hacking again",votes=0)
+
+c.question
+q.choice_set.all()
+q.choice_set.count()
+--------------------------------------------------------------
+ALTER USER xdba CREATEDB;
+ALTER USER xdba WITH SUPERUSER;
+
+-------------------------Running Test ---------------------
+sudo python3 manage.py test polls
+
+---------------------------------------------------------------------
+/home/sangram/workspace/python/formtut/pvenv001/mysite
+
+
+google api key:
+	AIzaSyBJA6pPJxsPuuvpMjW-98bpvQYxoY23A8Y 
+	AIzaSyBJA6pPJxsPuuvpMjW-98bpvQYxoY23A8Y
+
+google place api key:
+	AIzaSyB42t9_7uS8NmROcbTVu_m9cJFnguJqRNE
+
+Embedded Map:
+	https://www.google.com/maps/embed/v1/place?q=place_id:ChIJwe1EZjDG5zsRaYxkjY_tpF0&key=AIzaSyB42t9_7uS8NmROcbTVu_m9cJFnguJqRNE
+
+Static MAP:
+	https://maps.googleapis.com/maps/api/staticmap?center=Mumbai,Maharashtra&zoom=14&size=400x400&key=AIzaSyBJA6pPJxsPuuvpMjW-98bpvQYxoY23A8Y
+ 
+
+

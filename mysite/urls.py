@@ -21,3 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('polls/', include('polls.urls')),
 ]
+
+#admin.site.site_header = 'My project'
+admin.site.index_title = 'Features area'
+admin.site.site_title = 'My Site Admin'
