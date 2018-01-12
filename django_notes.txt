@@ -6,6 +6,9 @@ Create Application
 Launch Project:
 	python3 manage.py runserver
 
+Empty Template for adding data to table
+    python3 manage.py makemigrations --empty catalog
+    
 Initiate Database
 	 python3 manage.py migrate
 
