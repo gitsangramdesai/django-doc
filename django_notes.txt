@@ -92,5 +92,9 @@ Embedded Map:
 Static MAP:
 	https://maps.googleapis.com/maps/api/staticmap?center=Mumbai,Maharashtra&zoom=14&size=400x400&key=AIzaSyBJA6pPJxsPuuvpMjW-98bpvQYxoY23A8Y
  
+Rest Framework Token:
+     Required Header
+        Authorization:Token 5464604d29e952d0e68254d4d9231e39aec5
 
-
+References:
+    https://www.andreagrandi.it/2016/10/01/creating-a-production-ready-api-with-python-and-django-rest-framework-part-2/
