@@ -3,8 +3,18 @@ Create Project
 
 Create Application
 	python3 manage.py startapp myapp
+
 Launch Project:
 	python3 manage.py runserver
+
+Create Migration file for polls app
+	python3 manage.py makemigrations polls
+
+To see Migration Generated as SQL for polls App inside migration file "0001_initial.py"
+	python3 manage.py sqlmigrate polls 0001
+
+Run Migration Generated for Polls app:
+	python3 manage.py migrate polls
 
 Empty Template for adding data to table
     python3 manage.py makemigrations --empty catalog
@@ -41,14 +51,7 @@ Django Version Check:on python shell
 	import django
 	django.VERSION
 
-Create Migration file for polls app
-	python3 manage.py makemigrations polls
 
-To see Migration Generated as SQL for polls App inside migration file "0001_initial.py"
-	python3 manage.py sqlmigrate polls 0001		
-
-Run Migration Generated for Polls app:
-	python3 manage.py migrate polls
 
 Python App Shell
 	python3 manage.py shell

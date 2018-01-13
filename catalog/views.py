@@ -1,9 +1,17 @@
 from django.http import HttpResponse
 from rest_framework import generics
 from rest_framework.response import Response
-from .models import Product
-from .serializers import ProductSerializer
-from .permissions import IsAdminOrReadOnly
+
+from .models import Product, Review
+
+from .serializers import ProductSerializer, ReviewSerializer
+
+
+from .permissions import IsAdminOrReadOnly, IsOwnerOrReadOnly
+
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
+
+
 
 from django.http import Http404
 from rest_framework.response import Response
@@ -19,3 +27,23 @@ class ProductDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
     permission_classes = (IsAdminOrReadOnly, )
+
+class ReviewList(generics.ListCreateAPIView):
+    queryset = Review.objects.all()
+    serializer_class = ReviewSerializer
+    permission_classes = (IsAuthenticatedOrReadOnly, )
+
+    def perform_create(self, serializer):
+        serializer.save(
+            created_by=self.request.user,
+            product_id=self.kwargs['pk']
+        )
+
+class ReviewDetail(generics.RetrieveUpdateDestroyAPIView):
+    serializer_class = ReviewSerializer
+    permission_classes = (IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly)
+    lookup_url_kwarg = 'review_id'
+
+    def get_queryset(self):
+        review = self.kwargs['review_id']
+        return Review.objects.filter(id=review)
