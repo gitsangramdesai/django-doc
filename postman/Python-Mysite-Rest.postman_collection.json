@@ -1,0 +1,413 @@
+{
+	"id": "0911afbd-d879-5210-d1a7-37f8221a710e",
+	"name": "Python-Mysite-Rest",
+	"description": "",
+	"order": [
+		"3a3a68d3-3e9a-4916-3081-7b21b5288106",
+		"3684d04f-0206-f79c-6396-d28559055602",
+		"f51e56d4-2733-002c-c0f2-c27faa18a726",
+		"90f3c943-ebbc-a73f-e3e2-9ddd28297b4d",
+		"d33bdf25-3b43-d9fb-ce17-30bfe0b54223",
+		"8ed50b02-1717-caad-3db0-2dafe58f2f6d",
+		"d3e4d40e-95dc-77e0-3743-1ab61a255310",
+		"ca5dff00-08ae-0d78-d8be-9f8109460240",
+		"ad86e646-8a9e-5421-2fd2-2cb405f5ff06"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1515770795543,
+	"owner": 0,
+	"public": false,
+	"events": [],
+	"variables": [],
+	"auth": null,
+	"requests": [
+		{
+			"id": "3684d04f-0206-f79c-6396-d28559055602",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nAuthorization: Token 61bb8e9a504d29e952d0e68254d4d9231e39aec5\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Token 61bb8e9a504d29e952d0e68254d4d9231e39aec5",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/catalog/products/",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "yoghertt",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "description",
+					"value": "Sweet",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "price",
+					"value": "12.50",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"auth": null,
+			"time": 1515773411646,
+			"name": "http://127.0.0.1:8000/catalog/products/",
+			"description": "",
+			"collectionId": "0911afbd-d879-5210-d1a7-37f8221a710e",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "3a3a68d3-3e9a-4916-3081-7b21b5288106",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8000/catalog/products/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "0911afbd-d879-5210-d1a7-37f8221a710e",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://127.0.0.1:8000/catalog/products/",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1515770801598,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "8ed50b02-1717-caad-3db0-2dafe58f2f6d",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nAuthorization: Token 61bb8e9a504d29e952d0e68254d4d9231e39aec5\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Token 61bb8e9a504d29e952d0e68254d4d9231e39aec5",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/catalog/products/5",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "Id",
+					"value": "5",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "misall",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "spicy",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price",
+					"value": "15",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "urlencoded",
+			"auth": null,
+			"time": 1515808274831,
+			"name": "http://127.0.0.1:8000/catalog/products/2",
+			"description": "",
+			"collectionId": "0911afbd-d879-5210-d1a7-37f8221a710e",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "90f3c943-ebbc-a73f-e3e2-9ddd28297b4d",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8000/catalog/products/5",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"auth": null,
+			"time": 1515808286374,
+			"name": "http://127.0.0.1:8000/catalog/products/1",
+			"description": "",
+			"collectionId": "0911afbd-d879-5210-d1a7-37f8221a710e",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "ad86e646-8a9e-5421-2fd2-2cb405f5ff06",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8000/catalog/products/6/reviews/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "0911afbd-d879-5210-d1a7-37f8221a710e",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8000/catalog/products/6/reviews/",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1515809090895,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "ca5dff00-08ae-0d78-d8be-9f8109460240",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nAuthorization: Token 61bb8e9a504d29e952d0e68254d4d9231e39aec5\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Token 61bb8e9a504d29e952d0e68254d4d9231e39aec5",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/catalog/products/6/reviews/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "0911afbd-d879-5210-d1a7-37f8221a710e",
+			"data": [
+				{
+					"key": "title",
+					"value": "test1",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "review",
+					"value": "test review1",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "rating",
+					"value": "3",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://localhost:8000/catalog/products/6/reviews/",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1515809003055,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "d33bdf25-3b43-d9fb-ce17-30bfe0b54223",
+			"headers": "Authorization: Token 61bb8e9a504d29e952d0e68254d4d9231e39aec5\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Token 61bb8e9a504d29e952d0e68254d4d9231e39aec5",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/catalog/products/4",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"auth": null,
+			"time": 1515808280363,
+			"name": "http://127.0.0.1:8000/catalog/products/1",
+			"description": "",
+			"collectionId": "0911afbd-d879-5210-d1a7-37f8221a710e",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "d3e4d40e-95dc-77e0-3743-1ab61a255310",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nAuthorization: Token 61bb8e9a504d29e952d0e68254d4d9231e39aec5\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Token 61bb8e9a504d29e952d0e68254d4d9231e39aec5",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/catalog/products/6/reviews/",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "title",
+					"value": "test",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "review",
+					"value": "test review",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "rating",
+					"value": "3",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "urlencoded",
+			"auth": null,
+			"time": 1515808498952,
+			"name": "http://localhost:8000/catalog/products/6/reviews",
+			"description": "",
+			"collectionId": "0911afbd-d879-5210-d1a7-37f8221a710e",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "f51e56d4-2733-002c-c0f2-c27faa18a726",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api-token-auth/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "0911afbd-d879-5210-d1a7-37f8221a710e",
+			"data": [
+				{
+					"key": "username",
+					"value": "sangram",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "swara66@san11",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://127.0.0.1:8000/api-token-auth/",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1515772897684,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		}
+	]
+}

@@ -20,3 +20,7 @@ class Review(models.Model):
     created_by = models.ForeignKey(User,
                                    on_delete=models.CASCADE
                                    )
+
+class MyModel(models.Model):
+    title = models.CharField(max_length=100)
+    description = models.TextField(blank=True)
